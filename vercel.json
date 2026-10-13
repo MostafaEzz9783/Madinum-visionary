@@ -1,0 +1,139 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index.php",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/index-english.php",
+      "destination": "/en",
+      "permanent": false
+    },
+    {
+      "source": "/about_arabic.php",
+      "destination": "/about",
+      "permanent": false
+    },
+    {
+      "source": "/about_english.php",
+      "destination": "/en/about",
+      "permanent": false
+    },
+    {
+      "source": "/services_arabic.php",
+      "destination": "/services",
+      "permanent": false
+    },
+    {
+      "source": "/services_english.php",
+      "destination": "/en/services",
+      "permanent": false
+    },
+    {
+      "source": "/management_arabic.php",
+      "destination": "/services/property-management",
+      "permanent": false
+    },
+    {
+      "source": "/management_english.php",
+      "destination": "/en/services/property-management",
+      "permanent": false
+    },
+    {
+      "source": "/marketing_arabic.php",
+      "destination": "/services/marketing",
+      "permanent": false
+    },
+    {
+      "source": "/marketing_english.php",
+      "destination": "/en/services/marketing",
+      "permanent": false
+    },
+    {
+      "source": "/short-term-rental_arabic.php",
+      "destination": "/services/short-term-rental",
+      "permanent": false
+    },
+    {
+      "source": "/short-term-rental_english.php",
+      "destination": "/en/services/short-term-rental",
+      "permanent": false
+    },
+    {
+      "source": "/Real_Estate_Consulting_arabic.php",
+      "destination": "/services/investment",
+      "permanent": false
+    },
+    {
+      "source": "/Real_Estate_Consulting_english.php",
+      "destination": "/en/services/investment",
+      "permanent": false
+    },
+    {
+      "source": "/contact_arabic.php",
+      "destination": "/contact",
+      "permanent": false
+    },
+    {
+      "source": "/contact_english.php",
+      "destination": "/en/contact",
+      "permanent": false
+    },
+    {
+      "source": "/calculator.php",
+      "destination": "/calculator",
+      "permanent": false
+    },
+    {
+      "source": "/login_arabic.php",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/login_english.php",
+      "destination": "/en",
+      "permanent": false
+    },
+    {
+      "source": "/signup_arabic.php",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/signup_english.php",
+      "destination": "/en",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    }
+  ]
+}
